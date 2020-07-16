@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"timer3_ledblink\system_stm32f0xx.o"
+"timer3_ledblink\startup_stm32f070xb.o"
+"timer3_ledblink\main.o"
+"timer3_ledblink\stm32f0xx_it.o"
+"timer3_ledblink\stm32f0xx_hal_msp.o"
+"timer3_ledblink\stm32f0xx_hal_rcc_ex.o"
+"timer3_ledblink\stm32f0xx_hal_i2c.o"
+"timer3_ledblink\stm32f0xx_hal_gpio.o"
+"timer3_ledblink\stm32f0xx_hal.o"
+"timer3_ledblink\stm32f0xx_hal_tim_ex.o"
+"timer3_ledblink\stm32f0xx_hal_dma.o"
+"timer3_ledblink\stm32f0xx_hal_flash.o"
+"timer3_ledblink\stm32f0xx_hal_cortex.o"
+"timer3_ledblink\stm32f0xx_hal_pwr.o"
+"timer3_ledblink\stm32f0xx_hal_tim.o"
+"timer3_ledblink\stm32f0xx_hal_i2c_ex.o"
+"timer3_ledblink\stm32f0xx_hal_pwr_ex.o"
+"timer3_ledblink\stm32f0xx_hal_rcc.o"
+"timer3_ledblink\stm32f0xx_hal_flash_ex.o"
+--library_type=microlib --strict --scatter "timer3_ledblink\timer3_ledblink.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "timer3_ledblink.map" -o timer3_ledblink\timer3_ledblink.axf

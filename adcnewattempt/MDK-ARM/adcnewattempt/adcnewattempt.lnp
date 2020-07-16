@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"adcnewattempt\startup_stm32f070xb.o"
+"adcnewattempt\stm32f0xx_it.o"
+"adcnewattempt\main.o"
+"adcnewattempt\stm32f0xx_hal_msp.o"
+"adcnewattempt\system_stm32f0xx.o"
+"adcnewattempt\stm32f0xx_hal_flash.o"
+"adcnewattempt\stm32f0xx_hal_dma.o"
+"adcnewattempt\stm32f0xx_hal_adc.o"
+"adcnewattempt\stm32f0xx_hal_gpio.o"
+"adcnewattempt\stm32f0xx_hal_uart_ex.o"
+"adcnewattempt\stm32f0xx_hal_flash_ex.o"
+"adcnewattempt\stm32f0xx_hal_pwr_ex.o"
+"adcnewattempt\stm32f0xx_hal_rcc.o"
+"adcnewattempt\stm32f0xx_hal_i2c_ex.o"
+"adcnewattempt\stm32f0xx_hal_cortex.o"
+"adcnewattempt\stm32f0xx_hal_uart.o"
+"adcnewattempt\stm32f0xx_hal_pwr.o"
+"adcnewattempt\stm32f0xx_hal_rcc_ex.o"
+"adcnewattempt\stm32f0xx_hal_adc_ex.o"
+"adcnewattempt\stm32f0xx_hal_i2c.o"
+"adcnewattempt\stm32f0xx_hal.o"
+--library_type=microlib --strict --scatter "adcnewattempt\adcnewattempt.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adcnewattempt.map" -o adcnewattempt\adcnewattempt.axf

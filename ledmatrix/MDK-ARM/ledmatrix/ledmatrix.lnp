@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+"ledmatrix\stm32f0xx_it.o"
+"ledmatrix\main.o"
+"ledmatrix\stm32f0xx_hal_msp.o"
+"ledmatrix\stm32f0xx_hal.o"
+"ledmatrix\stm32f0xx_hal_cortex.o"
+"ledmatrix\stm32f0xx_hal_gpio.o"
+"ledmatrix\stm32f0xx_hal_i2c_ex.o"
+"ledmatrix\stm32f0xx_hal_rcc_ex.o"
+"ledmatrix\stm32f0xx_hal_rcc.o"
+"ledmatrix\stm32f0xx_hal_flash.o"
+"ledmatrix\stm32f0xx_hal_pwr_ex.o"
+"ledmatrix\stm32f0xx_hal_pwr.o"
+"ledmatrix\stm32f0xx_hal_dma.o"
+"ledmatrix\stm32f0xx_hal_flash_ex.o"
+"ledmatrix\stm32f0xx_hal_i2c.o"
+"ledmatrix\system_stm32f0xx.o"
+"ledmatrix\startup_stm32f070xb.o"
+--library_type=microlib --strict --scatter "ledmatrix\ledmatrix.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledmatrix.map" -o ledmatrix\ledmatrix.axf

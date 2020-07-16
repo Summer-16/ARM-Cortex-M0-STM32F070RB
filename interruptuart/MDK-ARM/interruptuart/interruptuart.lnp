@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"interruptuart\system_stm32f0xx.o"
+"interruptuart\startup_stm32f070xb.o"
+"interruptuart\stm32f0xx_it.o"
+"interruptuart\main.o"
+"interruptuart\stm32f0xx_hal_msp.o"
+"interruptuart\stm32f0xx_hal_pwr_ex.o"
+"interruptuart\stm32f0xx_hal_i2c_ex.o"
+"interruptuart\stm32f0xx_hal_dma.o"
+"interruptuart\stm32f0xx_hal_gpio.o"
+"interruptuart\stm32f0xx_hal.o"
+"interruptuart\stm32f0xx_hal_rcc_ex.o"
+"interruptuart\stm32f0xx_hal_rcc.o"
+"interruptuart\stm32f0xx_hal_uart.o"
+"interruptuart\stm32f0xx_hal_pwr.o"
+"interruptuart\stm32f0xx_hal_flash.o"
+"interruptuart\stm32f0xx_hal_flash_ex.o"
+"interruptuart\stm32f0xx_hal_i2c.o"
+"interruptuart\stm32f0xx_hal_uart_ex.o"
+"interruptuart\stm32f0xx_hal_cortex.o"
+--library_type=microlib --strict --scatter "interruptuart\interruptuart.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "interruptuart.map" -o interruptuart\interruptuart.axf

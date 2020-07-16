@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+"ledreg\startup_stm32f070xb.o"
+"ledreg\main.o"
+"ledreg\stm32f0xx_it.o"
+"ledreg\stm32f0xx_hal_msp.o"
+"ledreg\stm32f0xx_hal_gpio.o"
+"ledreg\stm32f0xx_hal_pwr.o"
+"ledreg\stm32f0xx_hal_rcc_ex.o"
+"ledreg\stm32f0xx_hal.o"
+"ledreg\stm32f0xx_hal_dma.o"
+"ledreg\stm32f0xx_hal_i2c.o"
+"ledreg\stm32f0xx_hal_pwr_ex.o"
+"ledreg\stm32f0xx_hal_cortex.o"
+"ledreg\stm32f0xx_hal_rcc.o"
+"ledreg\stm32f0xx_hal_flash.o"
+"ledreg\stm32f0xx_hal_flash_ex.o"
+"ledreg\stm32f0xx_hal_i2c_ex.o"
+"ledreg\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "ledreg\ledreg.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledreg.map" -o ledreg\ledreg.axf

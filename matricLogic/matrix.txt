@@ -1,0 +1,416 @@
+void printa()
+{
+for(int i=100;i>0;i--)//A
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,1);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}	
+}
+
+void prints()
+{
+for(int i=100;i>0;i--)//S
+{	
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}
+}
+void printh()
+{
+	for(int i=100;i>0;i--)//H
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}
+}
+void printi()
+{
+for(int i=100;i>0;i--)//I
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}
+}
+void printv()
+{
+for(int i=100;i>0;i--)//V
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}
+}
+void printm()
+{
+for(int i=100;i>0;i--)//M
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+}
+}
+
+void printb()
+{
+for(int i=100;i>0;i--)//B
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,1);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);	
+
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,1);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);}
+}
+
+void print8()
+{
+for(int i=100;i>0;i--)//8
+{
+HAL_GPIO_WritePin(GPIOA,r1_Pin,0);// vertical begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+		
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// vertical end
+HAL_Delay(1);
+HAL_GPIO_WritePin(GPIOA,r1_Pin,1);// horizontal begin
+HAL_GPIO_WritePin(GPIOA,r2_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r3_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r4_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r5_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r6_Pin,0);
+HAL_GPIO_WritePin(GPIOA,r7_Pin,1);
+HAL_GPIO_WritePin(GPIOA,r8_Pin,0);
+
+HAL_GPIO_WritePin(GPIOC,c1_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c2_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c3_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c4_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c5_Pin,0);
+HAL_GPIO_WritePin(GPIOC,c6_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c7_Pin,1);
+HAL_GPIO_WritePin(GPIOC,c8_Pin,1);// horizontal end
+HAL_Delay(1);}
+}

@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"tft_uart3\stm32f0xx_hal.o"
+"tft_uart3\stm32f0xx_hal_uart_ex.o"
+"tft_uart3\stm32f0xx_hal_cortex.o"
+"tft_uart3\stm32f0xx_hal_flash_ex.o"
+"tft_uart3\stm32f0xx_hal_pwr_ex.o"
+"tft_uart3\stm32f0xx_hal_spi.o"
+"tft_uart3\stm32f0xx_hal_uart.o"
+"tft_uart3\stm32f0xx_hal_gpio.o"
+"tft_uart3\stm32f0xx_hal_rcc_ex.o"
+"tft_uart3\stm32f0xx_hal_pwr.o"
+"tft_uart3\stm32f0xx_hal_i2c_ex.o"
+"tft_uart3\stm32f0xx_hal_i2c.o"
+"tft_uart3\stm32f0xx_hal_spi_ex.o"
+"tft_uart3\stm32f0xx_hal_flash.o"
+"tft_uart3\stm32f0xx_hal_dma.o"
+"tft_uart3\stm32f0xx_hal_rcc.o"
+"tft_uart3\stm32f0xx_hal_tim.o"
+"tft_uart3\stm32f0xx_hal_tim_ex.o"
+"tft_uart3\system_stm32f0xx.o"
+"tft_uart3\startup_stm32f070xb.o"
+"tft_uart3\main.o"
+"tft_uart3\stm32f0xx_hal_msp.o"
+"tft_uart3\stm32f0xx_it.o"
+--library_type=microlib --strict --scatter "tft_uart3\tft_uart3.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tft_uart3.map" -o tft_uart3\tft_uart3.axf
